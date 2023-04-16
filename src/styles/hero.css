@@ -1,0 +1,58 @@
+#hero-content-with-image {
+    background-image: url(/anyu-hero-clean.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero {
+    background-color: var(--hero-background-color);
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 140px 0;
+}
+
+#hero-content h1,
+#hero-content h2 {
+    text-align: center;
+}
+
+#hero-content h1 {
+    font-size: 2.5rem;
+}
+#hero-content h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#hero-action-buttons-online-order {
+    display: flex;
+    gap: var(--gutter);
+    margin-bottom: calc(var(--gutter) * 2);
+}
+
+.hero-action-buttons-online-order-button {
+    background-color: var(--background-color);
+    padding: var(--gutter);
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius);
+    color: var(--font-color);
+    border: 1px solid var(--shadow-color);
+    text-align: center;
+    box-shadow: 3px 3px 10px var(--shadow-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+#hero-action-buttons-facebook-like {
+    background-color: #3b5998;
+    color: var(--background-color);
+    margin-bottom: var(--gutter);
+}
