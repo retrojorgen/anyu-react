@@ -1,0 +1,53 @@
+.main {
+    max-width: 600px;
+    margin: 40px auto;
+}
+.main blockquote {
+    background-color: var(--hero-background-color);
+    padding: var(--gutter);
+    font-style: italic;
+    margin: 0;
+    font-size: 1.4rem;
+    border-radius: var(--border-radius);
+    
+}
+.fullimage {
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 40px var(--shadow-color);
+    max-width: calc(100% + 160px);
+    margin: 0 -80px var(--gutter) -80px;
+}
+
+.smallimage {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 40px var(--shadow-color);
+}
+
+.main p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: calc(var(--gutter) * 2);
+}
+
+.main h1 {
+    font-size: 2.4em;
+    margin-bottom: calc(var(--gutter));
+}
+.main iframe {
+    border-radius: var(--border-radius);
+    border: 0;
+    box-shadow: 10px 10px 40px var(--shadow-color);
+}
+
+.main h2 {
+    font-size: 1.7em;
+    line-height: 1.5em;
+    margin-bottom: calc(var(--gutter));
+}
+
+.main ul li {
+    font-size: 1.2em;
+    margin-bottom: calc(var(--gutter) / 2);
+}

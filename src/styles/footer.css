@@ -1,0 +1,13 @@
+#footer {
+    background-color: var(--hero-background-color);
+    
+    padding: 80px 0;
+
+}
+
+#footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: var(--gutter);
+    display: flex;
+}

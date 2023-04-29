@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
 
 :root {
   --max-width: 1100px;
   --background-color: #fffefc;
-  --font-color: #67563c;
+  --font-color: #2b2214;
   
   --light-font-color: #f9ead4;
   --hero-background-color: var(--light-font-color);
@@ -13,8 +13,8 @@
   --gutter: 1.25rem;
   --border-radius: 0.612rem;
 
-  --body-font: 'DM Sans', sans-serif;
-  --header-font: 'DM Serif Display', serif;
+  --body-font: 'Raleway', sans-serif;
+  --header-font: 'Raleway', sans-serif;
 
 }
 
@@ -47,4 +47,62 @@ h1, h2 {
 
 .restrain {
   padding: calc(var(--gutter) * 8) max(var(--gutter), 50vw - 860px)
+}
+
+
+.left-content {
+  position: relative;
+  flex: 0 1 600px; 
+}
+
+.front-block-right-image {
+  width: 900px;
+  margin: 80px auto;
+  display: flex;
+  gap: var(--gutter);
+}
+
+.left-content h2 {
+  font-size: 2em;
+}
+
+.left-content p {
+  font-size: 1.4em;
+  line-height: 1.7em;
+}
+.front-block-background-image .left-content h2,
+.front-block-background-image .left-content p {
+  color: var(--light-font-color);
+}
+
+.front-block-right-image .right-content {
+  flex: 0 0 400px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 40px var(--shadow-color);
+}
+
+.front-block-background-image .background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  filter: brightness(0.4);
+}
+.front-block-background-image {
+  position: relative;
+  width: 1100px;
+  border-radius: var(--border-radius);
+  min-height: 600px;
+  margin: 80px auto;
+  box-shadow: 10px 10px 40px var(--shadow-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.front-block-background-image a {
+  color: var(--light-font-color);
 }

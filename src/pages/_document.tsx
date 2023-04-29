@@ -1,14 +1,25 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { Header } from '@/components/Header'
 import { ContentRestrain } from '@/components/ContentRestrain'
+import { Footer } from '@/components/Footer'
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <meta name="author" content="Ildiko Balog" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="apple-touch-icon" href="http://www.anyu.no/wp-content/themes/anyuklinikken/library/images/apple-icon-touch.png" />
+        <link rel="icon" href="http://www.anyu.no/wp-content/themes/anyuklinikken/favicon.png" />
+        <meta name="msapplication-TileColor" content="#f01d4f" />
+        <meta name="msapplication-TileImage" content="http://www.anyu.no/wp-content/themes/anyuklinikken/library/images/win8-tile-icon.png" />
+      </Head>
       <body>
         <Header />
-          <Main />
+        <Main />
+        <Footer />
         <NextScript />
       </body>
     </Html>
