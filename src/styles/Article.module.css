@@ -16,6 +16,7 @@
     box-shadow: 10px 10px 40px var(--shadow-color);
     max-width: calc(100% + 160px);
     margin: 0 -80px var(--gutter) -80px;
+    height: auto;
 }
 
 .smallimage {
