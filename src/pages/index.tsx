@@ -26,7 +26,7 @@ export default function Home() {
             <h2>Velkommen til Anyu-klinikken</h2>
             <p>Anyu klinikken er en klinikk i Lørenskog som tilbyr akupunktur – IMS-, triggerpunkts- og øreakupunktur.</p>
           </div>
-          <Image className="right-content" src={photo1.src} alt="Akupunktur" />
+          <Image className="right-content" src={photo1} alt="Akupunktur" />
         </FrontBlockRightImage>
         <FrontBlocBackgroundImage backgroundImage={photo3.src}>
           <div className="left-content">
@@ -41,7 +41,7 @@ export default function Home() {
             <p>Våre kunder oppsøker oss for plager i svangerskapet som kvalme og halsbrann samt fødselsforberende behandling.</p>
             <p>Akupunktur kan også benyttes for par som har problemer med å bli gravide.</p>
           </div>
-          <Image className="right-content" src={photo2.src} alt="Akupunktur" />
+          <Image className="right-content" src={photo2} alt="Akupunktur" />
         </FrontBlockRightImage>
         <FrontBlocBackgroundImage backgroundImage={photo4.src}>
           <div className="left-content">

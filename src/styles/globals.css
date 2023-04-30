@@ -80,6 +80,7 @@ h1, h2 {
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: 10px 10px 40px var(--shadow-color);
+  height: auto;
 }
 
 .front-block-background-image .background-image {

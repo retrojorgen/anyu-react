@@ -19,7 +19,7 @@ export default function Akupunktur() {
       </Head>
       <main className={styles.main}>
         <h1>Online booking og priser</h1>
-        <Image src={photo1.src} className={styles.fullimage} alt="bilde" />
+        <Image src={photo1} className={styles.fullimage} alt="bilde" />
         <h2>Ønsker du å bestille time til akupunktur?</h2>
         <p>Du kan enkelt <a href="https://akuanyuklinikken.bestille.no/" target="_blank" rel="noopener">booke timer online</a> ved å <a href="https://akuanyuklinikken.bestille.no/" target="_blank" rel="noopener">følge denne lenken</a>.</p>
         <p>Du kan også booke time ved å ringe <strong>406 70 885</strong>, eller sende e-post til <a href="mailto:post@anyu.no" target="_blank" rel="noopener">post@anyu.no</a> .</p>
