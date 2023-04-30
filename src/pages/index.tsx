@@ -26,7 +26,7 @@ export default function Home() {
             <h2>Velkommen til Anyu-klinikken</h2>
             <p>Anyu klinikken er en klinikk i Lørenskog som tilbyr akupunktur – IMS-, triggerpunkts- og øreakupunktur.</p>
           </div>
-          <img className="right-content" src={photo1.src} alt="Akupunktur" />
+          <Image className="right-content" src={photo1.src} alt="Akupunktur" />
         </FrontBlockRightImage>
         <FrontBlocBackgroundImage backgroundImage={photo3.src}>
           <div className="left-content">
@@ -41,13 +41,13 @@ export default function Home() {
             <p>Våre kunder oppsøker oss for plager i svangerskapet som kvalme og halsbrann samt fødselsforberende behandling.</p>
             <p>Akupunktur kan også benyttes for par som har problemer med å bli gravide.</p>
           </div>
-          <img className="right-content" src={photo2.src} alt="Akupunktur" />
+          <Image className="right-content" src={photo2.src} alt="Akupunktur" />
         </FrontBlockRightImage>
         <FrontBlocBackgroundImage backgroundImage={photo4.src}>
           <div className="left-content">
             <h2>Sliter du med en plage? Sesongbetont?</h2>
             <p>Flere kunder oppsøker oss for plager i forbindelse med overgangsalder, sesongbetonte luftveisplager, mageproblemer, søvn, og nedstemthet.</p>
-            <p>Lurer du på om vi kan hjelpe deg med din plage? Ta kontakt på tlf 40670885, eller send en melding på vår <a href="https://www.facebook.com/anyuklinikken/" alt="lenke til vår facebookside">facebook-side</a>.</p>
+            <p>Lurer du på om vi kan hjelpe deg med din plage? Ta kontakt på tlf 40670885, eller send en melding på vår <a href="https://www.facebook.com/anyuklinikken/">facebook-side</a>.</p>
           </div>
         </FrontBlocBackgroundImage>
         <FrontBlockRightImage>
@@ -55,7 +55,7 @@ export default function Home() {
             <h2>Har du spørsmål rundt akupunktur eller Anyu-klinikken?</h2>
             <p>I denne korte videoen forklarer vår akupunktør Ildiko Balog om hvorfor fler og fler benytter seg av akupunktur ved smerte og andre plager.</p>
           </div>
-          <iframe className="right-content" width="560" height="315" src="https://www.youtube.com/embed/jUNaTrBznDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+          <iframe className="right-content" width="560" height="315" src="https://www.youtube.com/embed/jUNaTrBznDY" allow="autoplay; encrypted-media"></iframe>
         </FrontBlockRightImage>
       </main>
     </>
