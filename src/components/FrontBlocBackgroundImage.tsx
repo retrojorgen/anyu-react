@@ -1,4 +1,4 @@
-export const FrontBlocBackgroundImage = ({children, backgroundImage}) => {
+export const FrontBlocBackgroundImage = ({children, backgroundImage} : any) => {
     return (
         <div className="front-block-background-image">
             <div className="background-image" style={{backgroundImage: `url(${backgroundImage})`}} />
