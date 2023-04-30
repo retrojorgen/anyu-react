@@ -7,7 +7,7 @@ export default function Hero () {
             <ContentRestrain>
                 <div id="hero-content-with-image">
                     <div id="hero-content">
-                        <h1>Bestill time eller konsultasjon online:</h1>
+                        <h1>Bestill time og konsultasjon online:</h1>
                         <div id="hero-action-buttons">
                             <div id="hero-action-buttons-online-order">
                                 <a href="https://akuanyuklinikken.bestille.no/" target="_blank" className="hero-action-buttons-online-order-button">Akupunktur</a>

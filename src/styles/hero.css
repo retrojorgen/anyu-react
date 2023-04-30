@@ -56,3 +56,35 @@
     color: var(--background-color);
     margin-bottom: var(--gutter);
 }
+
+@media (max-width: 900px) { 
+    #hero-content {
+        padding: 0;
+        width: auto;
+        max-width: 100%;
+    }
+    #hero-content-with-image {
+        display: block;
+    }
+    #hero {
+        
+    }
+    #hero-content {
+        padding: calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 4);
+    }
+    #hero h1 {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    #hero-content-with-image {
+        background-size: auto 100%;
+        background-position: -168px bottom;
+    }
+    #hero-action-buttons-online-order {
+        flex-direction: column;
+    }
+    .hero-action-buttons-online-order-button {
+        font-size: 1.2rem;
+        padding: calc(var(--gutter) / 1.5);
+    }
+}

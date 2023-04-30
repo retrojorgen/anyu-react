@@ -30,3 +30,10 @@
     text-decoration: none;
     font-size: 1.2rem;
 }
+
+@media (max-width: 900px) {
+    #header-content {
+        flex-direction: column;
+        gap: var(--gutter);
+    }
+}

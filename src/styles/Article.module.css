@@ -51,3 +51,25 @@
     font-size: 1.2em;
     margin-bottom: calc(var(--gutter) / 2);
 }
+.main video {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .main {
+        padding: var(--gutter);
+        margin-top: 0;
+    }
+    .fullimage {
+        border-radius: 0;
+        max-width: calc(100% + var(--gutter) * 2);
+        margin: 0 calc(var(--gutter) *-1) var(--gutter) calc(var(--gutter) *-1);
+        height: auto;
+    }
+    .main iframe {
+        border-radius: 0;
+        max-width: calc(100% + var(--gutter) * 2);
+        margin: 0 calc(var(--gutter) *-1) var(--gutter) calc(var(--gutter) *-1);
+
+    }
+}

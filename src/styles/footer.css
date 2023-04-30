@@ -7,11 +7,23 @@
 
 #footer iframe {
     border: 0;
+    max-width: 100%;
 }
 
 #footer-container {
-    max-width: 900px;
+    width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     gap: var(--gutter);
     display: flex;
+}
+
+@media (max-width: 900px) {
+    #footer-container {
+        flex-direction: column;
+    }
+    #footer {
+        margin-top: calc(var(--gutter) * 2);
+        padding: calc(var(--gutter) * 2) var(--gutter);
+    }
 }
