@@ -26,7 +26,7 @@ export const Footer = () => {
                     </p>
                 </div>
                 <div>
-                    <iframe className="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7997.479086395043!2d10.9543161!3d59.9260062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01aa52ded1eaadf!2sAnyu+Klinikken!5e0!3m2!1sen!2sno!4v1526804328635" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+                    <iframe className="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7997.479086395043!2d10.9543161!3d59.9260062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01aa52ded1eaadf!2sAnyu+Klinikken!5e0!3m2!1sen!2sno!4v1526804328635" width="600" height="450"></iframe>
                 </div>
             </div>
         </footer>
