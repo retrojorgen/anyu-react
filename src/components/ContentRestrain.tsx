@@ -1,4 +1,4 @@
-export function ContentRestrain ({ children }) {
+export function ContentRestrain ({ children } : any) {
   return (
     <div className="restrain">
       {children}
