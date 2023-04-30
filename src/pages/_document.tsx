@@ -2,6 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 import { Header } from '@/components/Header'
 import { ContentRestrain } from '@/components/ContentRestrain'
 import { Footer } from '@/components/Footer'
+import FooterScripts from '@/components/CustomScripts'
 
 export default function Document() {
   return (
@@ -20,6 +21,7 @@ export default function Document() {
         <Header />
         <Main />
         <Footer />
+        <FooterScripts />
         <NextScript />
       </body>
     </Html>
