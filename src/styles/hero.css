@@ -10,6 +10,7 @@
     z-index: 4;
     filter: blur(20px);
     opacity: 0.4;
+    pointer-events: none;
 }
 #hero-content-with-image:after {
     content: "";
@@ -24,6 +25,7 @@
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 #hero-content-with-image {
