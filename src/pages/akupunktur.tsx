@@ -13,13 +13,14 @@ export default function Akupunktur() {
     <>
       <Head>
 
-        <title>Akupunktur - Anyu klinikken, senter for helse og livsmestring i lørenskog</title>
+        <title>Akupunktur - Anyu klinikken, senter for helse og livsmestring i Lørenskog</title>
         <meta name="description" content="Informasjon om akupunkturbehandling ved Anyu-klinikken. Behandling ved akupuntør Ildiko Balog." />
         <meta name="keywords" content="lørenskog, akupunktur, tuinamassasje, muskelmassasje, qigong, yoga, tankefeltterapi, rosenterapi, anyu klinikken" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.backdrop} />
       <h1>Akupunktur</h1>
         <img src={photo1.src} className={styles.fullimage} />
         

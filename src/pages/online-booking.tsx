@@ -18,6 +18,7 @@ export default function Akupunktur() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.backdrop} />
         <h1>Online booking og priser</h1>
         <Image src={photo1} className={styles.fullimage} alt="bilde" loading="lazy" />
         <h2>Ønsker du å bestille time til akupunktur?</h2>

@@ -17,7 +17,8 @@ export default function Akupunktur() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <blockquote>Livskraft i flyt og balanse gir god fysisk og mental helse.</blockquote>
+      <div className={styles.backdrop} />
+      <blockquote>«Livskraft i flyt og balanse gir god fysisk og mental helse.»</blockquote>
         <h1>Om Anyu-klinikken</h1>
         
         <p>Anyu klinikken vokste ut av drømmen til akupunktør Ildiko Balog. Visjonen er å tilby ulike løsninger som hjelper deg å finne ut av både fysiske problemer og mentale belastninger.</p>

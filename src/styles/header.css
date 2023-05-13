@@ -6,8 +6,8 @@
 }
 
 #header {
-    box-shadow: 0 0 8px var(--shadow-color);
     padding: var(--gutter);
+    background-color: var(--background-color);
 }
 
 #header-logo svg {

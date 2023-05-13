@@ -1,14 +1,47 @@
-#hero-content-with-image {
+#hero-content-with-image:before {
+    content: "";
+    position: absolute;
+    left: 97px;
+    top: 115px;
+    border-radius: 50%;
+    background-color: #a64a4a42;
+    width: 400px;
+    height: 400px;
+    z-index: 4;
+    filter: blur(20px);
+    opacity: 0.4;
+}
+#hero-content-with-image:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
     background-image: url(/anyu-hero-clean.webp);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
+}
+
+#hero-content-with-image {
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 #hero {
     background-color: var(--hero-background-color);
+    width: 100%;
+    max-width: 1200px;
+    margin-top: calc(var(--gutter) * 2);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin: calc(var(--gutter)) auto;
+    padding: 0 calc(var(--gutter) * 2);
+    position: relative;
 }
 
 #hero-content {
@@ -16,6 +49,8 @@
     flex-direction: column;
     max-width: 500px;
     padding: 75px 0;
+    position: relative;
+    z-index: 2;
 }
 
 #hero-content h1,
@@ -33,7 +68,6 @@
 
 #hero-action-buttons-online-order {
     display: flex;
-    margin-bottom: calc(var(--gutter) * 2);
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -53,9 +87,13 @@
 .hero-action-buttons-online-order-button:hover span {
     box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), inset 0 calc(var(--gutter) / 2 * -1) 0 0 var(--hero-background-color);
 }
-a#hero-action-buttons-facebook-like {
+#hero-action-buttons-facebook-like {
     background-color: #e140a4;
     color: var(--background-color);
+}
+
+#hero-action-buttons-facebook-like:hover span {
+    box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), inset 0 calc(var(--gutter) / 2 * -1) 0 0 #cb2a8d;
 }
 
 #hero-secondary-buttons {
@@ -63,8 +101,32 @@ a#hero-action-buttons-facebook-like {
     overflow: hidden;
 }
 
+#author {
+    position: absolute;
+    bottom: 75px;
+    left: 126px;
+    z-index: 5;
+    background-color: var(--background-color);
+    padding: calc(var(--gutter) / 2);
+    border-radius: var(--border-radius);
+}
+
+#author-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--font-color);
+}
+
+#author-title {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
 
 @media (max-width: 900px) { 
+    #author {
+        display: none;
+    }
     #hero-content {
         padding: 0;
         width: auto;
@@ -74,18 +136,20 @@ a#hero-action-buttons-facebook-like {
         display: block;
     }
     #hero {
-        
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
     }
     #hero-content {
-        padding: calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 4);
+        padding: calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5) calc(var(--gutter) * 6);
     }
     #hero h1 {
         margin-top: 0;
         font-size: 2rem;
     }
-    #hero-content-with-image {
-        background-size: auto 100%;
-        background-position: -168px bottom;
+    #hero-content-with-image:after {
+        background-size: auto 110%;
+        background-position: -146px top;
     }
     #hero-action-buttons-online-order {
         flex-direction: column;
