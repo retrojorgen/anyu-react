@@ -1,5 +1,5 @@
 export const Logo = () => (   
-<svg id="top-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg id="top-logo" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="381px" height="174.642px" viewBox="0 0 381 174.642" enableBackground="new 0 0 381 174.642" xmlSpace="preserve">
 <text transform="matrix(0.9593 -0.1445 -0.0954 0.9954 95 149.5693)" className="logo-fill" fontFamily="'Futura-Medium'" fontSize="28.6814">KLINIKKEN</text>
 <path className="logo-fill" d="M208.129,52.179c1.18-13.104-14.795-7.105-14.67-3.98c0.068,1.767,1.104,14.16-1.316,16.522

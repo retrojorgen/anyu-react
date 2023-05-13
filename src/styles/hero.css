@@ -1,7 +1,7 @@
 #hero-content-with-image {
-    background-image: url(/anyu-hero-clean.jpg);
+    background-image: url(/anyu-hero-clean.webp);
     background-size: 100%;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    padding: 140px 0;
+    padding: 75px 0;
 }
 
 #hero-content h1,
@@ -33,8 +33,9 @@
 
 #hero-action-buttons-online-order {
     display: flex;
-    gap: var(--gutter);
     margin-bottom: calc(var(--gutter) * 2);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .hero-action-buttons-online-order-button {
@@ -42,20 +43,26 @@
     padding: var(--gutter);
     display: block;
     width: 100%;
-    border-radius: var(--border-radius);
     color: var(--font-color);
-    border: 1px solid var(--shadow-color);
     text-align: center;
     box-shadow: 3px 3px 10px var(--shadow-color);
     font-weight: bold;
     font-size: 1.4rem;
     text-decoration: none;
 }
-#hero-action-buttons-facebook-like {
-    background-color: #3b5998;
-    color: var(--background-color);
-    margin-bottom: var(--gutter);
+.hero-action-buttons-online-order-button:hover span {
+    box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), inset 0 calc(var(--gutter) / 2 * -1) 0 0 var(--hero-background-color);
 }
+a#hero-action-buttons-facebook-like {
+    background-color: #e140a4;
+    color: var(--background-color);
+}
+
+#hero-secondary-buttons {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
 
 @media (max-width: 900px) { 
     #hero-content {

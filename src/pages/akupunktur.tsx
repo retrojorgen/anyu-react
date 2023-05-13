@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Article.module.css'
 import Hero from '@/components/Hero'
-import photo1 from '@/images/accupuncture-1.jpg';
-import photo2 from '@/images/accupuncture-2.jpg';
-import photo3 from '@/images/kopping.jpg';
-import photo4 from '@/images/ildiko-behandler.jpg';
-import photo5 from '@/images/MAF-400x335.jpg';
+import photo1 from '@/images/accupuncture-1.webp';
+import photo2 from '@/images/accupuncture-2.webp';
+import photo3 from '@/images/kopping.webp';
+import photo4 from '@/images/ildiko-behandler.webp';
+import photo5 from '@/images/MAF-400x335.webp';
 
 export default function Akupunktur() {
   return (
@@ -28,7 +28,7 @@ export default function Akupunktur() {
         <p>Som medlem av Akupunkturforeningen plikter akupunktøren å behandle helse- og personopplysninger på en forsvarlig måte og i overensstemmelse med gjeldende lover og forskrifter. </p>
         <p>Under intervjuet stilles det spørsmål om plager og symptomer. Akupunktøren er interessert i hvor lenge du har hatt plagene, hva som forverrer eller lindrer dem, osv. I tillegg ser akupunktøren på tungen og tar pulsen.</p>
         <h2>Lurer du på noe om akupunkturnåler? Vår behandler Ildiko forklarer hvordan de fungerer i denne videoen:</h2>
-        <p><iframe src="https://www.youtube.com/embed/oM24TmiYiMk" width="560" height="315"></iframe></p>
+        <p><iframe title="video of treatment" src="https://www.youtube.com/embed/oM24TmiYiMk" width="560" height="315"></iframe></p>
         <h2>Hva er akupunktur:</h2>
         <p>Spør du akupunktøren om hvorfor akupunktur virker, kan hun enten velge å svare utfra tradisjonell kinesisk medisinsk (TKM) teori, eller hun kan velge å svare utfra et biomedisinsk perspektiv.</p>
         <p>Vår akupunktør utøver både klassisk akupunktur, intramuskulær stimulering, triggerpunktsbehandling og øreakupunktur.</p>
@@ -66,10 +66,10 @@ export default function Akupunktur() {
         <p>Ildiko har jobbet på tverrfaglig klinikk siden 2008. I tillegg har hun har spesialkurs i barneakupunktur, svangerskaps-akupunktur og smertebehandling.</p>
         <p>I tillegg er hun instruktør i qigong siden 2009.</p>
         <p>Ildiko er medlem av Akupunkturforeningen<br />
-        Dersom du tilhører en annen del av landet og ønsker å søke etter akupunktør med riktig utdannelse, gå inn på foreningens hjemmeside <a href="http://www.akupunktur.no">www.akupunktur.no</a> og finn din akupunktør.<br />
+        Dersom du tilhører en annen del av landet og ønsker å søke etter akupunktør med riktig utdannelse, gå inn på foreningens hjemmeside <a href="https://www.akupunktur.no" aria-label="akupunkturforening">www.akupunktur.no</a> og finn din akupunktør.<br />
         </p>
         <img src={photo5.src} className={styles.smallimage} />
-        <p>Bestill time på tlf 40670885, send mail til <a href="mailto:post@anyu.no" target="_blank" rel="noopener">post@anyu.no</a> eller bestill time via <a href="https://akuanyuklinikken.bestille.no/">online-booking</a>.</p>
+        <p>Bestill time på tlf 40670885, send mail til <a aria-label="e-postadresse" href="mailto:post@anyu.no" target="_blank" rel="noopener">post@anyu.no</a> eller bestill time via <a href="https://akuanyuklinikken.bestille.no/" aria-label="akupunkturforening">online-booking</a>.</p>
       </main>
     </>
   )

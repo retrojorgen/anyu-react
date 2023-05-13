@@ -11,7 +11,6 @@ export default function Document() {
         <meta name="author" content="Ildiko Balog" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link rel="apple-touch-icon" href="/apple-icon-touch.png" />
         <link rel="icon" href="/favicon.png" />
         <meta name="msapplication-TileColor" content="#f01d4f" />

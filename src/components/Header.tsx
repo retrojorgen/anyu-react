@@ -8,7 +8,7 @@ export function Header () {
             <ContentRestrain>
             <div id="header-content">
                 <div id="header-logo">
-                    <Link href="/">
+                    <Link href="/" aria-label="link to homepage">
                         <Logo />
                     </Link>
                 </div>
