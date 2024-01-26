@@ -38,11 +38,6 @@ export default {
       type: 'string',
     },
     {
-      title: 'e-postadresse',
-      name: 'email',
-      type: 'string',
-    },
-    {
       title: 'google-kartlenke',
       name: 'googlemapsLink',
       type: 'string',

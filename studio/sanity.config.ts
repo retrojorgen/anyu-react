@@ -11,9 +11,9 @@ const singletonTypes = new Set(['settings'])
 
 export default defineConfig({
   name: 'default',
-  title: 'kode24-dagen 3.0',
+  title: 'Anyu klinikken',
 
-  projectId: 'xd5pvse5',
+  projectId: 'pbn529wk',
   dataset: 'production',
 
   plugins: [
@@ -38,8 +38,6 @@ export default defineConfig({
 
             // Regular document types
             S.documentTypeListItem('page').title('Sider'),
-            S.documentTypeListItem('sponsor').title('Sponsorer'),
-            S.documentTypeListItem('program').title('Program'),
           ]),
     }),
     visionTool(),

@@ -28,9 +28,33 @@ export default {
         name: 'content',
         type: 'array',
         of: [
-              {type: 'block'},
+          {
+            type: 'block', styles: [{ title: 'Overskrift', value: 'h2' },{ title: 'Under-overskrift', value: 'h3' }, { title: 'Normaltekst', value: 'normal' }],
+            marks: {
+              annotations: [
+{
+                name: 'link',
+                type: 'object',
+                title: 'Link',
+                fields: [
+                  {
+                    title: 'URL',
+                    name: 'url',
+                    type: 'url',
+                    validation: (Rule: { uri: (arg0: { scheme: string[]; }) => any; }) =>
+                    Rule.uri({
+                      scheme: ['http', 'https', 'mailto', 'tel'],
+                    }),
+                  },
+                ],
+
+              },
+              ],
+            },
+          },
               {type: 'image', fields: [{ type: 'text', name: 'alt', title: 'Alternative text', description: ``}]},
-              { type: 'youtube' },
+          { type: 'youtube' },
+                      {type: 'quotation'},
             ]
       }
     ]
