@@ -1,3 +1,0 @@
-autoconfig.anyu.no.	10800	IN	A	5.249.226.160
-ftp.anyu.no.		10800	IN	A	5.249.226.80
-_autodiscover._tcp.anyu.no.	10800	IN	SRV	0 100 443 autodiscover.uniweb.no.

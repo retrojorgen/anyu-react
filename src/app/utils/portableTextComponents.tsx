@@ -4,20 +4,27 @@ import imageUrlBuilder from '@sanity/image-url';
 import getYouTubeId from 'get-youtube-id';
 import { getImageDimensions } from '@sanity/asset-utils';
 
-export const SanityImage = ({ value }) => {
+export const getSanityImageUrl = (SanityImageObject: any) => {
+  const imageBuilder = imageUrlBuilder(sanityClient);
+  const image = imageBuilder.image(SanityImageObject);
+  return image.fit('max').auto('format').width(1000).url();
+}
+
+export const SanityImage = ({ value, alt, className }: { value: any; alt?: string, className?: string}) => {
   const imageBuilder = imageUrlBuilder(sanityClient);
   const image = imageBuilder.image(value);
   return (
     <img
-      className="image"
+      className={`image ${className || ''}`}
       src={image.fit('max').auto('format').width(1000).url()}
-      alt={value.alt || ' '}
+      alt={alt || ' '}
+
       loading="lazy"
     />
   );
 };
 
-const youtube = ({ value }) => {
+const youtube = ({ value } : {value: any}) => {
   const id = getYouTubeId(value.url);
   return (
     <div>
@@ -33,7 +40,7 @@ const youtube = ({ value }) => {
   );
 };
 
-const quotation = ({ value: { quote, author } }) => {
+const quotation = ({ value: { quote, author } }: { value: {quote: string, author: string} }) => {
   return (
     <div>
       <figure className="blockquote-container">

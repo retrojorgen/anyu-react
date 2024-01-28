@@ -1,8 +1,8 @@
-import '@/styles/globals.css'
-import '@/styles/header.css'
-import '@/styles/restrain.css'
-import '@/styles/hero.css'
-import '@/styles/footer.css'
+import './styles/globals.css'
+import './styles/header.css'
+import './styles/restrain.css'
+import './styles/hero.css'
+import './styles/footer.css'
 export const metadata = {
   title: 'Anyu Klinikken',
   author: 'Ildiko Balog',
@@ -27,7 +27,6 @@ export default async function RootLayout({
           <>
             <Header />
             <div className="page-wrapper">{children}</div>
-            {/* @ts-expect-error Server Component */}
             <Footer />
             <FooterScripts />
           </>

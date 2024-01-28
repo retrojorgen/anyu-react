@@ -29,21 +29,21 @@ export const Hero = async () => {
             <h2>{frontpage.heroContent.textAdditionalButtons}</h2>
           <div id="hero-secondary-buttons">
             <a
-              href={frontpage.heroContent.facebookBookingUrl}
-              className="hero-action-buttons-online-order-button"
-              id="hero-action-buttons-facebook-like"
-              aria-label="Send beskjed på facebook"
+                href={frontpage.heroContent.facebookBookingUrl}
+                className="hero-action-buttons-online-order-button"
+                id="hero-action-buttons-facebook-like"
+                aria-label={frontpage.heroContent.facebookButtonText}
             >
-              <span>Send beskjed på facebook</span>
+              <span>{frontpage.heroContent.facebookButtonText}</span>
             </a>
             <a
                 href={`tel:${frontpage.heroContent.phoneNumberBooking}`}
               itemProp="telephone"
               id="hero-action-buttons-number-highlight"
               className="hero-action-buttons-online-order-button"
-              aria-label="Telefonnummer du kan ringe"
+              aria-label={`${frontpage.heroContent.phoneNumberBookingText} ${frontpage.heroContent.phoneNumberBooking}`}
             >
-              <span>Ring:{frontpage.heroContent.phoneNumberBooking}</span>
+              <span>{frontpage.heroContent.phoneNumberBookingText} {frontpage.heroContent.phoneNumberBooking}</span>
             </a>
           </div>
         </div>

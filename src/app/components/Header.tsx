@@ -7,7 +7,6 @@ export const Header = async () => {
   const settings = await sanityClient.fetch(`
   *[_type == "settings"]{menu[]{title, type, page->{slug}}}[0]
   `);
-  console.log(settings.menu);
     return (
         <header id="header">
             <ContentRestrain>
