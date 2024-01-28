@@ -9,6 +9,7 @@ import { PortableText } from '@portabletext/react';
 import { portableTextComponents } from '../utils/portableTextComponents';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import styles from '../styles/Article.module.css'
 
 export async function generateMetadata({
   params,
@@ -37,8 +38,15 @@ export default async function Home({ params }: any) {
   return (
     <>
       <div className="header-wrapper">
-        <main>
-
+        <main className={styles.main}>
+          <div className={styles.backdrop} />
+          <article>
+            <h1>{ post.title }</h1>
+          <PortableText
+            value={post.content}
+            components={portableTextComponents}
+            />
+            </article>
         </main>
       </div>
     </>
