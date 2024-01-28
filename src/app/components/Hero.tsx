@@ -1,29 +1,35 @@
-export default function Hero() {
+import sanityClient from '../sanityClient';
+
+export const Hero = async () => {
+  const frontpage = await sanityClient.fetch(`
+  *[_type == "frontpage"][0]
+  `);
   return (
+    <>
     <div id="hero">
       <div id="hero-content-with-image">
         <div id="author">
-          <div id="author-name">Ildiko Balog</div>
-          <div id="author-title">Daglig leder og akupunktør</div>
+            <div id="author-name">{frontpage.heroContent.nameCreator}</div>
+            <div id="author-title">{frontpage.heroContent.titleCreator}</div>
         </div>
         <div id="hero-content">
-          <h1>Bestill time og konsultasjon online:</h1>
+            <h1>{frontpage.heroContent.textActionButtons}</h1>
           <div id="hero-action-buttons">
             <div id="hero-action-buttons-online-order">
               <a
-                href="https://akuanyuklinikken.bestille.no/"
+                  href={frontpage.heroContent.bookingUrl}
                 target="_blank"
                 className="hero-action-buttons-online-order-button"
-                aria-label="les mer om akupuntur"
+                aria-label="Bestillingslenke"
               >
-                <span>Akupunktur</span>
+                  <span>{frontpage.heroContent.bookingButtonName}</span>
               </a>
             </div>
           </div>
-          <h2>Eller:</h2>
+            <h2>{frontpage.heroContent.textAdditionalButtons}</h2>
           <div id="hero-secondary-buttons">
             <a
-              href="https://www.facebook.com/anyuklinikken/"
+              href={frontpage.heroContent.facebookBookingUrl}
               className="hero-action-buttons-online-order-button"
               id="hero-action-buttons-facebook-like"
               aria-label="Send beskjed på facebook"
@@ -31,17 +37,18 @@ export default function Hero() {
               <span>Send beskjed på facebook</span>
             </a>
             <a
-              href="tel:40670885"
+                href={`tel:${frontpage.heroContent.phoneNumberBooking}`}
               itemProp="telephone"
               id="hero-action-buttons-number-highlight"
               className="hero-action-buttons-online-order-button"
               aria-label="Telefonnummer du kan ringe"
             >
-              <span>Ring:40670885</span>
+              <span>Ring:{frontpage.heroContent.phoneNumberBooking}</span>
             </a>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
