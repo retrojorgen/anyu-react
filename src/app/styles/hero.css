@@ -125,7 +125,7 @@
 }
 
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     #author {
         display: none;
     }
@@ -155,7 +155,7 @@
     }
     #hero-content-with-image:after {
         background-size: auto 110%;
-        background-position: -146px top;
+        background-position: -92px top;
     }
     #hero-action-buttons-online-order {
         flex-direction: column;

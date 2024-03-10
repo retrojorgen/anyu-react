@@ -98,6 +98,26 @@ export default {
                 ],
               },
             },
+            {
+              title: 'Undersider',
+              name: 'underpages',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  name: 'underpage',
+                  fields: [
+                    {title: 'Tittel i undermeny', name: 'title', type: 'string'},
+                    {
+                      title: 'Side',
+                      name: 'page',
+                      type: 'reference',
+                      to: [{type: 'page'}],
+                    },
+                  ],
+                },
+              ],
+            },
           ],
         },
       ],

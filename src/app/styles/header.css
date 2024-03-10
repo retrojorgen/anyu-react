@@ -40,4 +40,46 @@
         flex-direction: column;
         gap: var(--gutter);
     }
+    #header-navigation ul {
+        flex-direction: column;
+        gap: var(--gutter);
+    }
+}
+
+#header-navigation .menu-item {
+    position: relative;
+}
+
+#header-navigation .menu-item.has-sub-menu {
+  padding-right: 14px;
+}
+
+#header-navigation .menu-item.has-sub-menu:after {
+    position: absolute;
+    content: "";
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    top: 50%;
+    transform: translateX(4px) translateY(-50%) rotate(45deg);
+    -webkit-transform: translateX(4px) translateY(-50%) rotate(45deg);
+}
+
+#header-navigation .sub-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: none;
+  left: 0;
+  flex-direction: column;
+  background-color: var(--background-color);
+  z-index: 10;
+  padding: var(--gutter);
+  border-radius: var(--border-radius);
+}
+
+#header-navigation .menu-item:hover .sub-menu {
+    display: flex;
 }

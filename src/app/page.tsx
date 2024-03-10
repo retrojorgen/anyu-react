@@ -8,7 +8,7 @@ import {
 import { FrontBlockRightImage } from './components/FrontBlockRightImage';
 import { FrontBlockBackgroundImage } from './components/FrontBlockBackgroundImage';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { Hero } from './components/Hero';
 import { YoutubeEmbed } from './components/YoutubeEmbed';
 
@@ -18,65 +18,66 @@ export default async function Home() {
   `);
   return (
     <>
-    <main className={styles.main}>
-      <Hero />
-        {frontpageContent.frontpagelements.map((element: any, key: number) => {
-          console.log(element);
-          if (element.displaytype === "imageRight") {
-            return (
-              <FrontBlockRightImage key={key}>
-
-                <div className="left-content">
-                  <h2>{element.title}</h2>
-                  <PortableText
-                    value={element.content}
-                    components={portableTextComponents}
+      <main className={styles.main}>
+        <Hero />
+        {frontpageContent.frontpagelements.map(
+          (element: any, key: number) => {
+            if (element.displaytype === 'imageRight') {
+              return (
+                <FrontBlockRightImage key={key}>
+                  <div className="left-content">
+                    <h2>{element.title}</h2>
+                    <PortableText
+                      value={element.content}
+                      components={portableTextComponents}
+                    />
+                  </div>
+                  <SanityImage
+                    value={element.photo}
+                    alt={element.photo?.alt || ''}
+                    className="right-content"
                   />
-                </div>
-                <SanityImage
-                  value={element.photo}
-                  alt={element.photo?.alt || ""}
-                  className="right-content"
-                />
-              </FrontBlockRightImage>
-            )
-          }
-          if (element.displaytype === "backgroundImage") {
-            return (
-              <FrontBlockBackgroundImage key={key} backgroundImage={element.photo} >
-                <div className="left-content">
-                  <h2>{element.title}</h2>
-                  <PortableText
-                    value={element.content}
-                    components={portableTextComponents}
-                  />
-                </div>
+                </FrontBlockRightImage>
+              );
+            }
+            if (element.displaytype === 'backgroundImage') {
+              return (
+                <FrontBlockBackgroundImage
+                  key={key}
+                  backgroundImage={element.photo}
+                >
+                  <div className="left-content">
+                    <h2>{element.title}</h2>
+                    <PortableText
+                      value={element.content}
+                      components={portableTextComponents}
+                    />
+                  </div>
                 </FrontBlockBackgroundImage>
-              )
-          }
-          if (element.displaytype === "youtubeRight") {
-            return (
-            <FrontBlockRightImage key={key}>
-                <div className="left-content">
-                  <h2>{element.title}</h2>
-                  <PortableText
-                    value={element.content}
-                    components={portableTextComponents}
-                  />
-                </div>
+              );
+            }
+            if (element.displaytype === 'youtubeRight') {
+              return (
+                <FrontBlockRightImage key={key}>
+                  <div className="left-content">
+                    <h2>{element.title}</h2>
+                    <PortableText
+                      value={element.content}
+                      components={portableTextComponents}
+                    />
+                  </div>
 
-                <div className="right-content">
-                  <YoutubeEmbed embedId={element.youtubeID} />
-                </div>
-              </FrontBlockRightImage>
-            )
+                  <div className="right-content">
+                    <YoutubeEmbed embedId={element.youtubeID} />
+                  </div>
+                </FrontBlockRightImage>
+              );
+            }
+            return <></>;
           }
-          return (<></>)
-        }
-        )
-      }
+        )}
       </main>
-      </>
+    </>
   );
 }
 
